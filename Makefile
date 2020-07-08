@@ -6,7 +6,7 @@
 #    By: asegovia <asegovia@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/03 09:54:02 by asegovia          #+#    #+#              #
-#    Updated: 2020/07/08 08:52:42 by asegovia         ###   ########.fr        #
+#    Updated: 2020/07/08 09:04:32 by asegovia         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,10 +26,10 @@ MAKE_LIBS = $(MAP) $(LIBFT) $(MLX)
 all: $(NAME)
 
 $(NAME): $(OBJS) $(LIBS)
-	Make -C Libft
+	Make -C lib
 	Make -C map
 	Make -C mlx
-	gcc $(FLAGS) -o $(NAME) $(OBJS) map/map.a Libft/libft.a
+	gcc $(FLAGS) -o $(NAME) $(OBJS) map/map.a lib/libft.a
 
 $(MLX):
 	Make -C mlx
@@ -37,17 +37,17 @@ $(MLX):
 $(MAP): map/map.a
 	Make -C map
 
-$(LIBFT): Libft/libft.a
-	Make -C Libft
+$(LIBFT): lib/libft.a
+	Make -C lib
 
 clean:
 	Make -C mlx clean
-	Make -C Libft clean
+	Make -C lib clean
 	Make -C map clean
 	rm -f $(OBJS)
 
 fclean:	clean
-	rm -f $(NAME) map/map.a Libft/libft.a mlx/libmlx.a
+	rm -f $(NAME) map/map.a lib/libft.a mlx/libmlx.a
 
 re:	fclean $(NAME)
 

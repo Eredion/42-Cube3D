@@ -6,7 +6,7 @@
 /*   By: asegovia <asegovia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/23 11:29:03 by asegovia          #+#    #+#             */
-/*   Updated: 2020/02/21 12:57:24 by asegovia         ###   ########.fr       */
+/*   Updated: 2020/07/08 09:02:08 by asegovia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include "map/map.h"
-# include "Libft/libft.h"
+# include "lib/libft.h"
 # include "cub_structs.h"
 # include <string.h>
 

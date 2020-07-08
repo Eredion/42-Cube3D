@@ -6,7 +6,7 @@
 #    By: asegovia <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/09 11:57:31 by asegovia          #+#    #+#              #
-#    Updated: 2020/01/23 18:13:52 by asegovia         ###   ########.fr        #
+#    Updated: 2020/07/08 09:05:20 by asegovia         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ FLAGS = -Wall -Wextra -Werror
 
 all:
 	gcc -c $(FLAGS) $(C_FILES)
-	ar rc $(NAME) $(O_FILES) ../Libft/libft.a
+	ar rc $(NAME) $(O_FILES) ../lib/libft.a
 	ranlib $(NAME)
 
 clean:

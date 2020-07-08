@@ -6,7 +6,7 @@
 /*   By: asegovia <asegovia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 14:57:49 by asegovia          #+#    #+#             */
-/*   Updated: 2020/02/21 11:24:39 by asegovia         ###   ########.fr       */
+/*   Updated: 2020/07/08 09:01:37 by asegovia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <fcntl.h>
-# include "../Libft/libft.h"
+# include "../lib/libft.h"
 
 typedef struct	s_sprite
 {
